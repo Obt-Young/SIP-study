@@ -1,0 +1,6 @@
+http://www.antisip.com/download/exosip2/
+
+osip2和osipparser2在libosip2-5.0.0中
+  osip2依赖于osipparser2，故osipparser2需要先编译，输出lib(.a)给osip2使用
+eXosip2在libexosip2-5.0.0中
+  eXosip2依赖于osip2，需要先获得osip2的dll(.a)，再编译eXosip2
