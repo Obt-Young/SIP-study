@@ -5,3 +5,13 @@ osip2和osipparser2在libosip2-5.0.0中
 eXosip2在libexosip2-5.0.0中
   eXosip2依赖于osip2，需要先获得osip2的dll(.a)，再编译eXosip2
   eXosip2还依赖与c-ares，需要县编译c-ares库 （https://c-ares.haxx.se/）
+  
+  
+常见错误修正：
+  https://blog.csdn.net/htbsoft0556/article/details/19540333
+  
+小结：主要是要弄清几者间的关系，实在不行，挨个创建工程编译成lib文件都行
+        osipparser2 ---> osip2 ---> eXosip2
+                               /|\
+                         c-ares |
+     除了eXosip2最终可以输出dll和lib外，其他都只输出lib，因为下一步都是编译，而不是运行时链接
