@@ -1,0 +1,9 @@
+在linux下：
+    1.下载eXosip2 osip2软件包
+    2.解压，分别执行./configure 
+                   make 
+                   make install
+    3.完成，编译好的动态库在/usr/local/lib下，头文件在/usr/local/include/osip2和/usr/local/include/eXosip2
+    
+在windows下：
+    https://blog.csdn.net/zymill/article/details/78620689?utm_source=blogxgwz16
